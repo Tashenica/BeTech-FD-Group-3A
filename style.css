@@ -1,33 +1,71 @@
+/* ========================================
+   GLOBAL RESET
+   ======================================== */
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Georgia', serif;
+    box-sizing: border-box;
 }
+
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
 
 body {
+    font-family: 'Source Sans 3', sans-serif;
     background-color: #ffffff;
+    color: #1a1a1a;
 }
 
-.header {
+
+/* ========================================
+   SHARED CONTAINER
+   ======================================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* ========================================
+   HEADER / NAVBAR
+   ======================================== */
+
+header {
     width: 100%;
     background-color: #ffffff;
     border-bottom: 1px solid #000000;
 }
 
+
 .navbar {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px 24px;
     justify-content: space-between;
     align-items: center;
+    padding: 16px 0;
 }
 
+
+/* ========================================
+   LOGO
+   ======================================== */
+
 .logo {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 32px;
     font-weight: bold;
     color: #000000;
 }
+
+
+/* ========================================
+   NAVIGATION LINKS
+   ======================================== */
 
 .nav-links {
     display: flex;
@@ -35,11 +73,13 @@ body {
     gap: 24px;
 }
 
+
 .nav-links ul {
     display: flex;
     list-style: none;
     gap: 24px;
 }
+
 
 .nav-links ul li a {
     text-decoration: none;
@@ -49,6 +89,7 @@ body {
     transition: color 0.2s ease;
 }
 
+
 .nav-links ul li a:hover {
     color: #ffffff;
     background-color: #000000;
@@ -56,30 +97,41 @@ body {
     padding: 5px 8px;
 }
 
+
+/* ========================================
+   GET STARTED BUTTON
+   ======================================== */
+
 .btn-get-started {
-    text-decoration: none;
     background-color: #000000;
     color: #ffffff;
     padding: 10px 18px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    transition: background-color 0.2s ease;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
+
 
 .btn-get-started:hover {
     background-color: #262626;
 }
 
+
+/* ========================================
+   MOBILE RESPONSIVE NAVBAR
+   ======================================== */
+
 @media (max-width: 768px) {
-   
+
     .navbar {
         flex-direction: column;
         text-align: center;
         gap: 16px;
     }
+
 
     .nav-links {
         flex-direction: column;
@@ -87,10 +139,12 @@ body {
         width: 100%;
     }
 
+
     .nav-links ul {
         flex-direction: column;
         gap: 12px;
     }
+
 
     .btn-get-started {
         display: inline-block;
@@ -98,15 +152,17 @@ body {
         max-width: 250px;
     }
 
-    .nav-links ul li a:hover {
-    color: #1a1a1a;
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-}
 
-.btn-get-started:hover {
-    background-color: #000000;
-}
+    .nav-links ul li a:hover {
+        color: #1a1a1a;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+    }
+
+
+    .btn-get-started:hover {
+        background-color: #000000;
+    }
 
 }
