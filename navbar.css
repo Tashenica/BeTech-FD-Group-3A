@@ -65,6 +65,8 @@ body {
     font-size: 14px;
     font-weight: 500;
     transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-get-started:hover {
@@ -95,5 +97,16 @@ body {
         width: 100%;
         max-width: 250px;
     }
+
+    .nav-links ul li a:hover {
+    color: #1a1a1a;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+.btn-get-started:hover {
+    background-color: #000000;
+}
 
 }
