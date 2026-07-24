@@ -6,6 +6,9 @@
     <title>Medium Inspired Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,9 +21,11 @@
                 <nav class="navbar">
             <!-- Medium Logo -->
              <div class="logo">Medium</div>
-             
-              <!-- Navigation Links Container -->
-               
+             <!--Hamburger Icon -->
+             <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+              <!-- Navigation Links Container --> 
               <div class="nav-links">
                 <ul>
                     <li><a href="#">Our story</a></li>
@@ -45,13 +50,33 @@
      </section>
      <!--Testimonials Section-->
      <section id="testimonials">
-        <div class="container"></div>
+        <div class="container">
+           
+        </div>
      </section>
 </main>
 <!--FOOTER-->
 <footer>
     <div class="container"></div>
 </footer>
+<!--Hamburger Event Listener handler-->
+<script>
+    const hamburger=document.getElementsByClassName("hamburger")[0];
+    const navlinks=document.getElementsByClassName("nav-links")[0];
+    const icon=document.querySelector(".hamburger i")
+    hamburger.addEventListener("click", function () {
+        navlinks.classList.toggle("active");
+        if(navlinks.classList.contains("active")){
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        }
+        else{
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+    }
 
+    )
+</script>
 </body>
 </html>
