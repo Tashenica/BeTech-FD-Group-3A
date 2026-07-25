@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>medium inspired landing page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Medium Inspired Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Header-->
+ <!--HEADER / NAVBAR-->
+         <!--Navbar Developer-->
 <header> 
     <div class= "container">
-        <nav></nav>
+                <nav class="navbar">
+            <!-- Medium Logo -->
+             <div class="logo">Medium</div>
+             <!--Hamburger Icon -->
+             <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+              <!-- Navigation Links Container --> 
+              <div class="nav-links">
+                <ul>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Write</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+                <!-- Get Started Call-To-Action (CTA) Button -->
+                 <button class="btn-get-started">Get Started</button>
+              </div>
+        </nav>
+        </div>
     </header>
 <!--MAIN CONTENT-->
 <main><!--Hero Section-->
@@ -42,6 +71,16 @@
         </div>
     </section>
     
+    <!-- Why Choose Us Section-->
+     <section id="features">
+        <div class="container"></div>
+     </section>
+     <!--Testimonials Section-->
+     <section id="testimonials">
+        <div class="container">
+           
+        </div>
+     </section>
 </main>
 <!--FOOTER-->
 <footer>
@@ -57,6 +96,24 @@
             </div>
              </div>
 </footer>
+<!--Hamburger Event Listener handler-->
+<script>
+    const hamburger=document.getElementsByClassName("hamburger")[0];
+    const navlinks=document.getElementsByClassName("nav-links")[0];
+    const icon=document.querySelector(".hamburger i")
+    hamburger.addEventListener("click", function () {
+        navlinks.classList.toggle("active");
+        if(navlinks.classList.contains("active")){
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        }
+        else{
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+    }
 
+    )
+</script>
 </body>
 </html>
