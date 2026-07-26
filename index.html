@@ -2,54 +2,92 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Medium Landing Page</title>
+    <title>Medium Inspired Landing Page</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-<!--Header-->
- <!--HEADER / NAVBAR-->
-         <!--Navbar Developer-->
-<header> 
-    <div class= "container">
-                <nav class="navbar">
-            <!-- Medium Logo -->
-             <div class="logo">Medium</div>
-             <!--Hamburger Icon -->
-             <div class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-               </div>
-              <!-- Navigation Links Container --> 
-              <div class="nav-links">
-                <ul>
-                    <li><a href="#">Our story</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Write</a></li>
-                    <li><a href="#">Sign In</a></li>
-                </ul>
-                <!-- Get Started Call-To-Action (CTA) Button -->
-                 <button class="btn-get-started">Get Started</button>
-              </div>
-        </nav>
+
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
+
+    <header>
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Logo -->
+                <div class="logo">
+                    Medium
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <button
+                    class="hamburger"
+                    aria-label="Open navigation menu"
+                    type="button"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="nav-links">
+
+                    <ul>
+                        <li>
+                            <a href="#">Our Story</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Membership</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Write</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Sign In</a>
+                        </li>
+                    </ul>
+
+                    <!-- Get Started Button -->
+                    <button
+                        class="btn-get-started"
+                        type="button"
+                    >
+                        Get Started
+                    </button>
+
+                </div>
+
+            </nav>
+
         </div>
+
     </header>
 <!--MAIN CONTENT-->
 <main>
@@ -65,16 +103,475 @@
             <h4>— Sarah J.</h4>
         </div>
 
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <!-- Hero Text Content -->
+                <div class="hero-content">
+
+                    <!-- Hero Category Label -->
+                    <div class="hero-label">
+
+                        <span>READ</span>
+
+                        <span class="dot"></span>
+
+                        <span>WRITE</span>
+
+                        <span class="dot"></span>
+
+                        <span>CONNECT</span>
+
+                    </div>
+
+
+                    <!-- Main Hero Heading -->
+                    <h1>
+                        Human stories
+                        <br>
+                        and ideas
+                    </h1>
+
+
+                    <!-- Hero Description -->
+                    <p>
+                        Discover stories, thinking, and expertise from people
+                        around the world. Share your perspective and become
+                        part of a community that values curiosity, insight,
+                        and meaningful conversations.
+                    </p>
+
+
+                    <!-- Hero Call-to-Action Buttons -->
+                    <div class="hero-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Start Reading
+                        </a>
+
+                        <a href="#" class="btn-secondary">
+                            Explore Articles
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     PHONE MOCKUP
+                ========================== -->
+
+                <div class="hero-phone">
+
+                    <div class="phone">
+
+                        <!-- Dynamic Island -->
+                        <div class="dynamic-island"></div>
+
+
+                        <!-- Phone Status Bar -->
+                        <div class="status-bar">
+
+                            <span class="time">
+                                9:41
+                            </span>
+
+                            <div class="status-icons">
+
+                                <i class="fa-solid fa-signal"></i>
+
+                                <i class="fa-solid fa-wifi"></i>
+
+                                <i class="fa-solid fa-battery-full"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone Screen Content -->
+                        <div class="phone-content">
+
+
+                            <!-- App Header -->
+                            <div class="app-header">
+
+                                <h3>
+                                    Medium
+                                </h3>
+
+                                <button
+                                    class="notification-btn"
+                                    type="button"
+                                    aria-label="Notifications"
+                                >
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+
+                            </div>
+
+
+                            <!-- Featured Story Banner -->
+                            <div class="phone-banner">
+
+                                <img
+                                    src="images/hero-banner.jpg"
+                                    alt="Featured story"
+                                >
+
+                                <div class="banner-overlay">
+
+                                    <span class="editor-badge">
+                                        Editor's Pick
+                                    </span>
+
+                                    <h2>
+                                        Stories
+                                        <br>
+                                        That Inspire
+                                    </h2>
+
+                                </div>
         <div class="testimonial-card">
             <p>"Thousands of quality articles all in one place."</p>
             <h4>— David M.</h4>
         </div>
 
+                            </div>
+
+
+                            <!-- Featured Story -->
+                            <div class="featured-story">
+
+                                <!-- Author Information -->
+                                <div class="author">
+
+                                    <img
+                                        src="images/author.jpg"
+                                        alt="Sarah Johnson"
+                                    >
+
+                                    <div>
+
+                                        <h4>
+                                            Sarah Johnson
+                                        </h4>
+
+                                        <span>
+                                            Top Writer
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Story Title -->
+                                <h3>
+                                    The Power of Human Stories
+                                </h3>
+
+
+                                <!-- Story Description -->
+                                <p>
+                                    Read meaningful articles from writers,
+                                    creators and everyday people sharing
+                                    experiences that inspire communities.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Continue Reading -->
+                            <div class="section-title">
+
+                                <span>
+                                    Continue Reading
+                                </span>
+
+                            </div>
+
+
+                            <!-- Article Card -->
+                            <div class="article-card">
+
+                                <img
+                                    src="images/article.jpg"
+                                    alt="Article thumbnail"
+                                >
+
+                                <div class="article-content">
+
+                                    <span class="category">
+                                        SELF IMPROVEMENT
+                                    </span>
+
+                                    <h4>
+                                        10 Habits That Will
+                                        Change Your Life
+                                    </h4>
+
+                                    <p>
+                                        Small daily habits can create
+                                        remarkable personal growth.
+                                    </p>
+
+                                    <a href="#">
+                                        Read Story
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Phone Bottom Navigation -->
+                            <nav class="bottom-nav" aria-label="Mobile app navigation">
+
+                                <a href="#" class="active" aria-label="Home">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+
+                                <a href="#" aria-label="Search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+
+                                <a href="#" aria-label="Bookmarks">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </a>
+
+                                <a href="#" aria-label="Profile">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHY MEDIUM / FEATURES
+        ========================== -->
+
+        <section id="features">
+
+            <div class="container">
+
+                <h2>
+                    Why Medium?
+                </h2>
+
+
+                <!-- Features Introduction -->
+                <p class="feature-intro">
+                    Explore fresh ideas, discover new perspectives,
+                    and connect with writers from around the world.
+                </p>
+
+
+                <!-- Feature Cards -->
+                <div class="feature-cards">
+
+
+                    <!-- Read Feature -->
+                    <article class="feature-card">
+
+                        <i class="fa-solid fa-book-open feature-icon"></i>
+
+                        <h3>
+                            READ
+                        </h3>
+
+                        <p>
+                            Discover inspiring stories, practical knowledge,
+                            and fresh ideas from people around the world.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Write Feature -->
+                    <article class="feature-card">
+
+                        <i class="fa-solid fa-pen-nib feature-icon"></i>
+
+                        <h3>
+                            WRITE
+                        </h3>
+
+                        <p>
+                            Share your experiences, opinions, and knowledge
+                            with a global community of readers and thinkers.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Connect Feature -->
+                    <article class="feature-card">
+
+                        <i class="fa-solid fa-globe feature-icon"></i>
+
+                        <h3>
+                            CONNECT
+                        </h3>
+
+                        <p>
+                            Join conversations, connect with writers,
+                            and grow through meaningful discussions.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ADDITIONAL CONTENT
+        ========================== -->
+
+        <section id="testimonials">
+
+            <div class="container">
+
+                <!-- Additional content will be added here -->
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-bar">
+
+                <!-- Footer Navigation -->
+                <div class="footer-links">
+
+                    <a href="#">
+                        Home
+                    </a>
+
+                    <a href="#">
+                        Our Story
+                    </a>
+
+                    <a href="#">
+                        Membership
+                    </a>
+
+                    <a href="#">
+                        Write
+                    </a>
+
+                </div>
+
+
+                <!-- Copyright -->
+                <p>
+                    &copy; 2026 Medium. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         HAMBURGER MENU JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        // Select hamburger menu
+        const hamburger = document.querySelector(".hamburger");
+
+        // Select navigation links
+        const navLinks = document.querySelector(".nav-links");
+
+        // Select hamburger icon
+        const icon = document.querySelector(".hamburger i");
+
+
+        // Toggle mobile navigation
+        hamburger.addEventListener("click", function () {
+
+            navLinks.classList.toggle("active");
+
+
+            // Change icon from bars to X
+            if (navLinks.classList.contains("active")) {
+
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+
+                hamburger.setAttribute(
+                    "aria-label",
+                    "Close navigation menu"
+                );
+
+            }
+
+            // Change icon from X back to bars
+            else {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+                hamburger.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+            }
+
+        });
+
+    </script>
     </div>
 </section>
     
       
 
-    </body>
+</body>
 
 </html>
