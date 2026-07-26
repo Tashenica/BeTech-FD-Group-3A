@@ -171,3 +171,217 @@ padding: 80px 0;
         }
     }
 
+   
+/* ========================================
+   GLOBAL RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+
+/* ========================================
+   SHARED CONTAINER
+   ======================================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* ========================================
+   HEADER / NAVBAR
+   ======================================== */
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     box-shadow: 2px 2px 10px #757575;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+   
+}
+
+
+/* ========================================
+   LOGO
+   ======================================== */
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* ========================================
+   NAVIGATION LINKS
+   ======================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.hamburger{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+}
+
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+
+.nav-links ul li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+
+
+/* ========================================
+   GET STARTED BUTTON
+   ======================================== */
+
+.btn-get-started {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.btn-get-started:hover {
+    box-shadow: 2px 2px 5px #757575;
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE NAVBAR
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    
+    .nav-links{
+        display: none;
+        
+    }
+    .nav-links.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 50%;
+        padding: 20px 0;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px #757575;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links a{
+        display: block;
+        text-decoration: none;
+    }
+    .btn-get-started:hover {
+         box-shadow: 2px 2px 5px #757575;
+    transform: scale(1.03);
+    }
+
+    /* .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    .btn-get-started {
+        display: inline-block;
+        width: 100%;
+        max-width: 250px;
+    }
+
+
+    .nav-links ul li a:hover {
+        color: #1a1a1a;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+    } */
+
+
+}
