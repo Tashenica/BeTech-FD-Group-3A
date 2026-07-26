@@ -19,12 +19,13 @@ margin: 0 auto;
 padding: 80px 0;
 }
 
+
 #features h2{
     font-family: 'playfair Display', serif
-    font-size 32px;
+    font-size 36px;
     text-align: center;
     color: #1C1C1C;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     }
 
     .feature-intro{
@@ -50,7 +51,7 @@ padding: 80px 0;
     }
 
     .feature-icon{
-        font-size: 48px;
+        font-size: 36px;
         color: #1C1C1C;
         margin-bottom: 20px;
     }
@@ -123,19 +124,19 @@ padding: 80px 0;
             margin-bottom: 40px;
         }
 
-        .fearure-cards{
+        .feature-cards{
             flex-direction: column;
-            gap: 35px;
+            gap: 0;
         }
 
-        .fearure-card{
+        .feature-card{
             width: 100%;
             border-right: none !important;
             border-bottom: 2px solid #E8E6DA;
             padding-bottom: 25px;
         }
 
-        .fearure-card:last-child{
+        .feature-card:last-child{
             border-bottom: none;
         }
 
@@ -225,7 +226,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
-   
+    width: 100%;  
 }
 
 
@@ -321,14 +322,16 @@ header {
     .nav-links.active{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 0px;
-        width: 50%;
-        padding: 20px 0;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 72px);
+        background: #ffffff;
         align-items: center;
-        gap: 20px;
-        border-radius: 10px;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-top: 40px;
         box-shadow: 0 5px 15px #757575;
     }
     .nav-links ul{
